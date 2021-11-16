@@ -35,7 +35,20 @@ This project is about inverse kinematics. In this project, I implemented inverse
 
 ## Images
 
+
+
 ## Videos & time stamp
+
+Link: https://youtu.be/ys9APLU1Kdw
+
+Time stamp:
+00:02-00:21 2D multiple arms without limit
+00:22-00:40 2D multiple arms with limit
+00:44-01:31 2D collision with arm limited
+1:32-1:47 2D collision without arm limited
+1:49-2:50 3D CCD multiple arms with limit
+2:51-3:30 3D CCD multiple arms without limit
+3:31-4:09 3D Fabrik with multiple arms
 
 ## Challenge Write Up & Diffifulties
 
