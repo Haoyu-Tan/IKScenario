@@ -36,6 +36,7 @@ This project is about inverse kinematics. In this project, I implemented inverse
 ## Images
 
 (1) 2D CCD
+
 ![962e24ced1b3dbeb4c6fb9738c32148](https://user-images.githubusercontent.com/35856355/141928130-73e4f1f1-a677-4475-8b8d-e3df921aea19.png)
 
 (2) 3D CCD with(right) and without(left) limit
