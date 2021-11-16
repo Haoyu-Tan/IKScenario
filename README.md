@@ -39,7 +39,7 @@ This project is about inverse kinematics. In this project, I implemented inverse
 
 ![962e24ced1b3dbeb4c6fb9738c32148](https://user-images.githubusercontent.com/35856355/141928130-73e4f1f1-a677-4475-8b8d-e3df921aea19.png)
 
-(2) 3D CCD with(right) and without(left) limit
+(2) 3D CCD with(right) and without(left) joint limit
 
 ![857fb84b83d6b99bfbf3ce9cb2871d2](https://user-images.githubusercontent.com/35856355/141929326-14eb5671-fbc9-45a9-9184-a31102e0a224.png)
 
