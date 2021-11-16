@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is about inverse kinematics. In this project, I implemented inverse kinematics in 2D and 3D. In each version, there are one or more characters in the scene with two arms. For each character, there is a green ball between two arms and the character tries to reach the ball using its arm. In 3D version, I used two strategies to solve the problem. One was Cyclic Coordinate Descent(CCD), which I combined quaternion to adjust the rotation from end of the arm to root of the arm between each joint. The other was Fabirk, which gradually adjusted the position of joint from end of arm to root of arm and from root to end of arm back and force. 
+This project is about inverse kinematics. In this project, I implemented inverse kinematics in 2D (in processing) and 3D (in unity). In each version, there are one or more characters in the scene with two arms. For each character, there is a green ball between two arms and the character tries to reach the ball using its arm. In 3D version, I used two strategies to solve the problem. One was Cyclic Coordinate Descent(CCD), which I combined quaternion to adjust the rotation from end of the arm to root of the arm between each joint. The other was Fabirk, which gradually adjusted the position of joint from end of arm to root of arm and from root to end of arm back and force. 
 
 ## Features Implemented
 
@@ -46,6 +46,9 @@ IK Fabrik is very simple to implement because it just modifies the transform of 
 CCD is more difficult to implement comparing with Fabrik because it involves a large amount of rotation, which is not quite easy to compute. For 2D, rotation can be computed using sin and cos. However in 3D, we have to use either rotation matrix or quaternion. I chose to do rotation with quaternion, by finding the 4th plane between two vectors and rotating certain angles between two vectors based on the plane. Furthermore, if one of the parent joints is incorrect, the rotation will be totally wrong. One advantage for CCD is that it is easily to set the limitation for joints in CCD because we use angle during computation, which is quite straight forward. In 2D, the joint limit is very easy find for each arm because it only has one degree of freedom and the limit can be found by trying different values for several times. Nonetheless, it is not easy to find the proper limitation, especially in 3D. The reason is in 3D, we have more degrees of freedom, sometimes the arm might rotate to a degree which we do not expected. However, In think CCD performs better because the transformation looks more natual between joints. 
 
 Difficulties that I encounted was finding the proper limits for joints in 3D. My character looks natual when perform some actions, such as hugging the ball. However, it is easy to stuck at some position due to the limitation and it requires us to wisely move the target to bring it back. Furthermore, there is no gaurenteen that the conversion from quaterion back to euler provide the correct value because there might be more than one results for a rotation.
+
+![8e97506a5e370a34072906485d69c43](https://user-images.githubusercontent.com/35856355/141891980-88e59ca3-e354-4f6e-90e7-5aa2f704a48e.png)
+
 
 ## References
 
